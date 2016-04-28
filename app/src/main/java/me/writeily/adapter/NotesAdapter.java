@@ -51,44 +51,60 @@ public class NotesAdapter extends ArrayAdapter<File> implements Filterable {
         return i;
     }
 
+    static class ViewHolderItem {
+        TextView noteTitle;
+        TextView noteExtra;
+        ImageView fileIdentifierImageView;
+        String theme;
+    }
+
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        String theme = PreferenceManager.getDefaultSharedPreferences(context).getString(context.getString(R.string.pref_theme_key), "");
+    public View getView(int i, View convertView, ViewGroup viewGroup) {
+        ViewHolderItem viewHolder;
+        if(convertView==null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(R.layout.file_item, viewGroup, false);
 
-        View row = inflater.inflate(R.layout.file_item, viewGroup, false);
-        TextView noteTitle = (TextView) row.findViewById(R.id.note_title);
-        TextView noteExtra = (TextView) row.findViewById(R.id.note_extra);
-        ImageView fileIdentifierImageView = (ImageView) row.findViewById(R.id.file_identifier_icon);
+            viewHolder = new ViewHolderItem();
+            viewHolder.theme = PreferenceManager.getDefaultSharedPreferences(context).getString(context.getString(R.string.pref_theme_key), "");
+            viewHolder.noteTitle = (TextView) convertView.findViewById(R.id.note_title);
+            viewHolder.noteExtra = (TextView) convertView.findViewById(R.id.note_extra);
+            viewHolder.fileIdentifierImageView = (ImageView) convertView.findViewById(R.id.file_identifier_icon);
 
-        noteTitle.setText(Constants.MD_EXTENSION.matcher(getItem(i).getName()).replaceAll(EMPTY_STRING));
+            convertView.setTag(viewHolder);
+        }
+        else{
+            // we've just avoided calling findViewById() on resource everytime
+            // just use the viewHolder
+            viewHolder = (ViewHolderItem) convertView.getTag();
+        }
+
+        viewHolder.noteTitle.setText(Constants.MD_EXTENSION.matcher(getItem(i).getName()).replaceAll(EMPTY_STRING));
 
         if (getItem(i).isDirectory()) {
-            noteExtra.setText(generateExtraForFile(i));
+            viewHolder.noteExtra.setText(generateExtraForFile(i));
         } else {
-            noteExtra.setText(generateExtraForDirectory(i));
+            viewHolder.noteExtra.setText(generateExtraForDirectory(i));
         }
 
         // Theme Adjustments
-        if (theme.equals(context.getString(R.string.theme_dark))) {
-            noteTitle.setTextColor(context.getResources().getColor(android.R.color.white));
+        if (viewHolder.theme.equals(context.getString(R.string.theme_dark))) {
+            viewHolder.noteTitle.setTextColor(context.getResources().getColor(android.R.color.white));
 
             if (getItem(i).isDirectory()) {
-                fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_folder_light));
+                viewHolder.fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_folder_light));
             } else {
-                fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_notes_light));
+                viewHolder.fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_notes_light));
             }
         } else {
-            noteTitle.setTextColor(context.getResources().getColor(R.color.dark_grey));
-
+            viewHolder.noteTitle.setTextColor(context.getResources().getColor(R.color.dark_grey));
             if (getItem(i).isDirectory()) {
-                fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_folder));
+                viewHolder.fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_folder));
             } else {
-                fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_notes));
+                viewHolder.fileIdentifierImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_notes));
             }
         }
-
-        return row;
+        return convertView;
     }
 
     private String generateExtraForFile(int i) {
