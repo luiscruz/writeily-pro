@@ -8,7 +8,6 @@
     <string name="pref_rate_writeily_key">pref_rate_writeily</string>
     <string name="pref_twitter_key">pref_twitter_key</string>
     <string name="pref_lock_type_key">pref_lock_type_key</string>
-    <string name="pref_pin_key">pref_pin</string>
     <string name="pref_preview_first_key">pref_edit_first_key</string>
     <string name="pref_show_markdown_shortcuts_key">pref_show_markdown_shortcuts_key</string>
     <string name="pref_highlighting_activated_key">pref_highlighting_activated_key</string>
@@ -36,8 +35,6 @@
     <string name="main_developer_url">https://github.com/plafue</string>
     <string name="original_creator">Jeff Martin</string>
     <string name="original_creator_url">http://jeffreymartin.ca</string>
-    <string name="contributor_plafue">plafue</string>
-    <string name="contributor_plafue_url">https://github.com/plafue</string>
     <string name="contributor_minty123">Minty123</string>
     <string name="contributor_minty123_url">https://github.com/Minty123</string>
     <string name="contributor_davydsantos">davydsantos</string>
@@ -55,7 +52,6 @@
     <string name="translators_chinese_simplified">Tommy Alex</string>
     <string name="translators_italian">Claudio Arseni</string>
     <string name="translators_croatian">d-ban</string>
-    <string name="translators_brazilian_portuguese">danilofreire</string>
 
     <string name="library_anddown">CommonsWare AndDown 0.2.0</string>
     <string name="licence_apache20">Apache License v2.0</string>
