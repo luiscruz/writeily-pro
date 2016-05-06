@@ -6,14 +6,11 @@
     <string name="theme_dark">Oscuro</string>
     <string name="delete">Eliminar</string>
     <string name="rename">Renombrar</string>
-    <string name="restore">Restaurar</string>
-    <string name="wr_import">Importar</string>
     <string name="confirm_delete">Confirmar borrado</string>
     <string name="confirm_overwrite">Archivo ya existe, ¿reemplazar?</string>
     <string name="new_name_hint">Nuevo nombre</string>
     <string name="incorrect_pin_text">Pin incorrecto</string>
     <string name="title">Título</string>
-    <string name="untitled">Sin Título</string>
     <string name="empty_directory">Este directorio está vacío</string>
     <string name="navigate_up_folder">Volver a la anterior carpeta</string>
     <string name="folder_name_hint">Escribe el nombre del directorio</string>

@@ -5,13 +5,10 @@
     <string name="theme_dark">Dark</string>
     <string name="delete">Delete</string>
     <string name="rename">Rename</string>
-    <string name="restore">Restore</string>
-    <string name="wr_import">Import</string>
     <string name="confirm_delete">Confirm Delete</string>
     <string name="confirm_overwrite">File already exists, overwrite?</string>
     <string name="incorrect_pin_text">Incorrect pin</string>
     <string name="title">Title</string>
-    <string name="untitled">Untitled</string>
     <string name="empty_directory">This directory is empty</string>
     <string name="navigate_up_folder">Back to previous folder</string>
     <string name="folder_name_hint">Enter the name of your folder</string>

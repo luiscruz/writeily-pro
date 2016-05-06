@@ -5,13 +5,10 @@
     <string name="theme_dark">Scuro</string>
     <string name="delete">Elimina</string>
     <string name="rename">Rinomina</string>
-    <string name="restore">Ripristina</string>
-    <string name="wr_import">Importa</string>
     <string name="confirm_delete">Conferma eliminazione</string>
     <string name="confirm_overwrite">File already exists, overwrite?</string>
     <string name="incorrect_pin_text">PIN errato</string>
     <string name="title">Titolo</string>
-    <string name="untitled">Senza titolo</string>
     <string name="empty_directory">Questa directory è vuota</string>
     <string name="navigate_up_folder">Indietro alla cartella precedente</string>
     <string name="folder_name_hint">Inserire il nome della cartella</string>

@@ -5,13 +5,10 @@
   <string name="theme_dark">Tamna</string>
   <string name="delete">Izbriši</string>
   <string name="rename">Preimenuj</string>
-  <string name="restore">Vrati</string>
-  <string name="wr_import">Unesi</string>
   <string name="confirm_delete">Potvrdi brisanje</string>
   <string name="confirm_overwrite">Datoteka već postoji, prebrisati?</string>
   <string name="incorrect_pin_text">Pogrešan PIN</string>
   <string name="title">Naslov</string>
-  <string name="untitled">Bez naslova</string>
   <string name="empty_directory">Prazna mapa</string>
   <string name="navigate_up_folder">Povratak na prethodnu mapu</string>
   <string name="folder_name_hint">Unesite naziv mape</string>

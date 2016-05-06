@@ -6,13 +6,10 @@
     <string name="theme_dark">어두운 테마</string>
     <string name="delete">삭제</string>
     <string name="rename">이름 바꾸기</string>
-    <string name="restore">되돌리기</string>
-    <string name="wr_import">불러오기</string>
     <string name="confirm_delete">삭제 확인</string>
     <string name="confirm_overwrite">파일이 이미 있습니다. 덮어쓸까요?</string>
     <string name="incorrect_pin_text">잘못된 비밀번호</string>
     <string name="title">제목</string>
-    <string name="untitled">제목없음</string>
     <string name="empty_directory">이 폴더는 비어있습니다</string>
     <string name="navigate_up_folder">이전 폴더로 가기</string>
     <string name="folder_name_hint">폴더의 이름을 입력하세요</string>

@@ -5,14 +5,11 @@
     <string name="theme_light">浅色</string>
     <string name="theme_dark">暗色</string>
     <string name="delete">删除</string>
-    <string name="restore">恢复</string>
-    <string name="wr_import">导入</string>
     <string name="confirm_delete">确认删除</string>
     <string name="confirm_overwrite">File already exists, overwrite?</string>
     <string name="new_name_hint">Enter new name</string>
     <string name="incorrect_pin_text">PIN 码不正确</string>
     <string name="title">标题</string>
-    <string name="untitled">未命名</string>
     <string name="empty_directory">空文件夹</string>
     <string name="navigate_up_folder">返回上一级目录</string>
     <string name="folder_name_hint">输入文件夹名</string>

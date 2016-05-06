@@ -6,14 +6,11 @@
     <string name="theme_dark">Foncé</string>
     <string name="delete">Effacer</string>
     <string name="rename">Renommer</string>
-    <string name="restore">Restaurer</string>
-    <string name="wr_import">Importer</string>
     <string name="confirm_delete">Confirmer Effacement</string>
     <string name="confirm_overwrite">File already exists, overwrite?</string>
     <string name="new_name_hint">Enter new name</string>
     <string name="incorrect_pin_text">Incorrect NIP</string>
     <string name="title">Titre</string>
-    <string name="untitled">Non-Titré</string>
     <string name="empty_directory">Ce dossier est vide</string>
     <string name="navigate_up_folder">Retour au dossier précédent</string>
     <string name="folder_name_hint">Entrez un nom de dossier</string>

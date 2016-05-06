@@ -5,13 +5,10 @@
     <string name="theme_dark">Escuro</string>
     <string name="delete">Deletar</string>
     <string name="rename">Renomear</string>
-    <string name="restore">Restaurar</string>
-    <string name="wr_import">Importar</string>
     <string name="confirm_delete">Confirmar deletar?</string>
     <string name="confirm_overwrite">Aquivo já existente, sobrescrever?</string>
     <string name="incorrect_pin_text">Pin incorreto</string>
     <string name="title">Título</string>
-    <string name="untitled">Sem título</string>
     <string name="empty_directory">Esta pasta está vazia</string>
     <string name="navigate_up_folder">Voltar para a pasta anterior</string>
     <string name="folder_name_hint">Digite o nome da pasta</string>

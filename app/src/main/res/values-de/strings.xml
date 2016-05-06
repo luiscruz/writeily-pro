@@ -6,12 +6,9 @@
     <string name="theme_dark">Dunkel</string>
     <string name="delete">Löschen</string>
     <string name="rename">Umbenennen</string>
-    <string name="restore">Wiederherstellen</string>
-    <string name="wr_import">Importieren</string>
     <string name="confirm_delete">Löschen bestätigen</string>
     <string name="incorrect_pin_text">Ungültige PIN</string>
     <string name="title">Titel</string>
-    <string name="untitled">Unbenannt</string>
     <string name="empty_directory">Der Ordner ist leer</string>
     <string name="navigate_up_folder">Zum vorherigen Ordner</string>
     <string name="folder_name_hint">Name des Ordners</string>

@@ -5,12 +5,9 @@
     <string name="theme_light">Jasny</string>
     <string name="theme_dark">Ciemny</string>
     <string name="delete">Usuń</string>
-    <string name="restore">Przywróć</string>
-    <string name="wr_import">Wczytaj</string>
 
     <string name="incorrect_pin_text">Niewłaściwy kod PIN</string>
     <string name="title">Tytuł</string>
-    <string name="untitled">Bez tytułu</string>
     <string name="empty_directory">Ten katalog jest pusty</string>
     <string name="navigate_up_folder">Wróć do poprzedniego folderu</string>
     <string name="folder_name_hint">Wpisz nazwę folderu</string>
